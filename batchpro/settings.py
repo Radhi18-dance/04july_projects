@@ -150,7 +150,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'dazzling18diva@gmail.com'
-EMAIL_HOST_PASSWORD=''
+EMAIL_HOST_PASSWORD='ukcw qcwe xyqt reqn'
 
 #django auth
 LOGIN_REDIRECT_URL = '/'
@@ -159,8 +159,8 @@ SOCIALACCOUNT_PROVIDERS = {
     'google': {
         'SCOPE': ['profile', 'email'],
         'APP': {
-            'client_id': '',
-            'secret': '',
+            'client_id': '320342225678-3ros8m4j0muu4tssinllek07t8on14p3.apps.googleusercontent.com',
+            'secret': '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',
             'key': ''
         }
     }
