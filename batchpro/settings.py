@@ -139,7 +139,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'dazzling18diva@gmail.com'
-EMAIL_HOST_PASSWORD='ukcw qcwe xyqt reqn'
+EMAIL_HOST_PASSWORD=''
 
 
 JAZZMIN_SETTINGS = {
