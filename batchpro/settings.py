@@ -39,11 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp',
-    #django social account authentication 
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -54,13 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    #django auth 
-    'allauth.account.middleware.AccountMiddleware',
-]
-#django auth
-AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',  # Default ModelBackend
-    'allauth.account.auth_backends.AuthenticationBackend',  # Allauth authentication backend for social authentication
+   
 ]
 
 
@@ -152,19 +141,6 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'dazzling18diva@gmail.com'
 EMAIL_HOST_PASSWORD='ukcw qcwe xyqt reqn'
 
-#django auth
-LOGIN_REDIRECT_URL = '/'
-
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'SCOPE': ['profile', 'email'],
-        'APP': {
-            'client_id': '320342225678-3ros8m4j0muu4tssinllek07t8on14p3.apps.googleusercontent.com',
-            'secret': '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',
-            'key': ''
-        }
-    }
-}
 
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
@@ -177,7 +153,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "HOUSING SOCIETY",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "//IcoN LOGO.png",
+    "site_logo": "/IcoN LOGO.png",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,
